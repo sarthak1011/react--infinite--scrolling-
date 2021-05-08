@@ -1,5 +1,5 @@
-import React, { Fragment, useContext, useEffect } from 'react';
-import { Link,useHistory } from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { useHistory } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -14,11 +14,6 @@ const onLogout = () => {
 const authLinks = (
   <Fragment>
   
-    {/* <li>
-    <Link to='/about'>About</Link>
-    </li> */}
-     
-    {/* <li>Hello {user && user.name}</li> */}
     <li>
       <a onClick={onLogout} >
         <i className='fas fa-sign-out-alt' />{' '}
